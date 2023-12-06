@@ -19,6 +19,12 @@ output:
 - HDF5 file containing zero padded smoothed speed data (speedAdj), instantenious periods (IpsAll) and corresponding amplitudes (AmpsAll)
 - weighted histogram of period distribution where amplitude is adjusted by the angular frequency
 
+# Calculate_change_in_intensity_per_segment.m
+Matlab code to compute average change in intensity for each ring segment.
+
+Input: Original .tif input image and XYs.xlxs coordinate file created using RingSegmentation and smoothing.ipynb
+Output: Average smoothed change in fluorescence intensity per segment over time
+
 # pulsed input model shorter.ipynb
 mathematical model describing the cortex as an active actomyosin gel under the control of a reaction-diffusion model of RhoA activity, both of which were calibrated by in vivo measurements from C. elegans zygotes (Staddon, M.F., Munro, E.M., and Banerjee, S. (2022). Pulsatile contractions and pattern formation in excitable actomyosin cortex. PLoS Comput Biol 18, e1009981.) Model was adapted to include a pulsatile stimulus. Variabel inputs are the pulsatile stimulus (ds), the strain (sigma) and the duration (duration).
 
